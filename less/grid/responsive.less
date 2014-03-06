@@ -1,0 +1,49 @@
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+@total-width: 100%;
+
+
+// base structure //
+#header, #footer {
+	.column(12);
+	background: #999;
+}
+#main-content {
+	.column(12);
+	background: #eee;
+}
+
+#content-two-column {
+	.column(9);
+	background: #eee;
+}
+
+#content-three-column {
+	.column(6);
+	background: #eee;
+}
+
+#aside {
+	.column(3);
+	background: #ccc;
+}
+
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	#content-three-column {
+		.column(9);
+		background: #eee;
+	}
+}
+
+@media (max-width: 767px) {
+	#aside, #content-two-column, #content-three-column {
+		.column(12);
+	}
+}

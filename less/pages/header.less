@@ -1,0 +1,150 @@
+/*****
+
+	HEADER
+
+*****/
+body { background: #f0f0f2; font-family: @myriad; } 
+
+#header{
+	h1 {
+		float: left;
+		margin: 30px 0;
+	}
+	.nav-institucional {
+		float: right;
+		width: 600px;
+		.clearfix;
+		.ico-home {
+			background-position: -1px -263px;
+			float: left;
+			width: 18px;
+			height: 17px;
+			margin: 4px 0 0;
+			&:hover { background-position: -1px -284px; }
+		}
+		.ico-brasil {
+			background-position: -1px -1px;
+			float: left;
+			width: 18px;
+			height: 18px;
+			margin: 3px 10px 0 0;
+			&:hover { background-position: -1px -21px; }
+		}
+		.ico-eua {
+			background-position: -1px -41px;
+			float: left;
+			width: 18px;
+			height: 18px;
+			margin: 4px 0 0;
+			&:hover { background-position: -1px -62px; }
+		}
+		nav {
+			background: #e5e6e8;
+			position: relative;
+			height: 25px;
+			width: 475px;
+			float: left;
+			margin: 0 30px;
+			.inner-shadow(@horizontal:0, @vertical:-2px, @blur:4px, @alpha: 0.2);
+			.clearfix;
+			li {
+				float: left;
+				a {
+					font-size: 12px;
+					color: @gray;
+					margin: 0 16px;
+					.transition(all .4s ease);
+					&:hover { 
+						color: @orange;
+						text-decoration: none;
+					}
+				}
+			}
+			.det-left, .det-right {
+				position: absolute;
+				top: 0;
+				width: 23px;
+				height: 25px;
+			}
+			.det-left {
+				background-position: -1px -198px;
+				left: -20px;
+			}
+			.det-right {
+				background-position: -1px -168px;
+				right: -20px;
+			}
+		}
+	}
+	.form-search {
+		float: right;
+		margin: 40px 0;
+		padding: 3px;
+		.rounded(5px);
+		.gradient(@start: #f8f8f8, @stop: #e7e7e7);
+		.clearfix;
+		label {
+			input, button { float: left; }
+			input[type="text"] {
+				border: 1px solid @orange;
+				color: @gray;
+				font-size: 12px;
+				padding: 5px;
+				width: 450px;
+				.rounded(5px 0 0 5px);
+			}
+			button {
+				border: 1px solid @orange;
+				border-left: 0;
+				color: @gray;
+				font-size: 12px;
+				padding: 5px;
+				width: 30px;
+				.gradient(@start: #e7e7e7, @stop: #f8f8f8);
+				.rounded(0 5px 5px 0);
+				span {
+					background-position: 1px -304px;
+					display: block;
+					height: 15px;
+				}
+			}
+		}
+	}
+	.nav-principal {
+		float: right;
+		width: 97%;
+		background: @green;
+		position: relative;
+		.rounded(0 7px 0 0);
+		.clearfix;
+		.det-left {
+			position: absolute;
+			top: 0;
+			width: 36px;
+			height: 30px;
+			background-position: -1px -228px;
+			left: -36px;
+		}
+		li {
+			float: left;
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAIAAACOpGH9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkJDMjBBMDhBNTQzMTFFMzk2NERGOTFGODdCMkI5RUMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkJDMjBBMDlBNTQzMTFFMzk2NERGOTFGODdCMkI5RUMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGQkMyMEEwNkE1NDMxMUUzOTY0REY5MUY4N0IyQjlFQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQkMyMEEwN0E1NDMxMUUzOTY0REY5MUY4N0IyQjlFQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr4fkx8AAABASURBVHjaLIjJDYAwDAR3B9N/WUgUQR0oyDYi4TWHj+tEudMxcEIZtnoQQXcjCXtxNdNn+/NClf8HshlxvwIMAJnpGI1VfWoPAAAAAElFTkSuQmCC) no-repeat left center;
+			&:hover, &.active {
+				a {
+					background: @orange;
+					text-decoration: none;
+					position: relative;
+					z-index: 10;
+				}	
+			}
+			&:first-child {background: none;}
+			a {
+				color: @white;
+				display: block;
+				padding: 7px 35px;
+				margin-left: 1px;
+				font: bold 13px "myriad pro", helvetica, arial;
+				.transition(all .4s ease);
+			}
+		}
+	}
+}

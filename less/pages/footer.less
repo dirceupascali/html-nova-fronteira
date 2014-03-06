@@ -1,0 +1,39 @@
+/*****
+
+	FOOTER
+
+*****/
+#footer {
+	h6 {
+		background: @green;
+		color: @white;
+		font: italic 13px @myriad;
+		padding: 6px 0;
+		text-align: center;
+		position: relative;
+		z-index: 10;
+		.rounded (0 0 7px 7px);
+	}
+	.nav-social {
+		margin: 10px auto;
+		text-align: center;
+		width: auto;
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			a {
+				width: 24px;
+				height: 23px;
+				&.facebook {
+					background-position: -1px -85px;
+				}
+				&.linkedin {
+					background-position: -1px -112px;
+				}
+				&.twitter {
+					background-position: -1px -139px;
+				}
+			}
+		}
+	}
+}
