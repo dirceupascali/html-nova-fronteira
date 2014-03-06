@@ -1157,9 +1157,20 @@ body {
 }
 /*****
 
-	HOME
+	INSTITUCIONAL
 
 *****/
+#box-content {
+  padding: 10px;
+  width: 960px;
+  border: 1px solid #f38121;
+  border-radius: 1em;
+}
+.tit-secundario {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fac14e;
+}
 /*****
 
 	HOME
