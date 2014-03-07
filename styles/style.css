@@ -1116,50 +1116,55 @@ body {
 	HOME
 
 *****/
+.separate {
+  float: left;
+  width: 320px;
+  height: 320px;
+}
 .pics1,
 .pics2,
 .pics3 {
   float: left;
 }
 .pics1 {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   overflow: hidden;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 .pics1 img {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   top: 0;
   left: 0;
 }
 .pics2 {
-  height: 150px;
-  width: 300px;
+  height: 160px;
+  width: 320px;
   overflow: hidden;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 .pics2 img {
-  height: 150px;
-  width: 300px;
+  height: 160px;
+  width: 320px;
   top: 0;
   left: 0;
 }
 .pics3 {
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   overflow: hidden;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 .pics3 img {
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   top: 0;
   left: 0;
 }

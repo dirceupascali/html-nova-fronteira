@@ -8,12 +8,12 @@ $(function() {
 	    timeout: 4000
 	});
 	$('.pics2').cycle({ 
-	    fx:     'scrollLeft', 
+	    fx:     'fade', 
 	    speed:   500, 
 	    timeout: 6000
 	});
 	$('.pics3').cycle({ 
-	    fx:     'turnDown', 
+	    fx:     'fade', 
 	    speed:   500, 
 	    timeout: 9000
 	});
