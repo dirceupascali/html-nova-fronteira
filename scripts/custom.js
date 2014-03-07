@@ -4,17 +4,22 @@
 $(function() {
 	$('.pics1').cycle({ 
 	    fx:     'fade', 
-	    speed:   500, 
+	    speed:   1000, 
 	    timeout: 4000
+	});
+	$('.pics1-2').cycle({ 
+	    fx:     'fade', 
+	    speed:   1000, 
+	    timeout: 5000
 	});
 	$('.pics2').cycle({ 
 	    fx:     'fade', 
-	    speed:   500, 
-	    timeout: 6000
+	    speed:   1000, 
+	    timeout: 7000
 	});
 	$('.pics3').cycle({ 
 	    fx:     'fade', 
-	    speed:   500, 
-	    timeout: 9000
+	    speed:   1000, 
+	    timeout: 8000
 	});
 });

@@ -7,9 +7,34 @@
 	float: left;
 	width: 320px;
 	height: 320px;
+	.green div, .yellow div, .orange div, .white div { padding: 10px; }
+	.green { background: @green; }
+	.yellow { background: @yellow; }
+	.orange { background: @orange; }
+	.green, .yellow, .orange {
+		h2 {
+			color: @white;
+			font: 30px @myriad;
+		}
+		p {
+			color: @white;
+			font: 15px @myriad;
+		}
+	}
+	.white {
+		background: @white;
+		h2 {
+			color: @orange;
+			font: 30px @myriad;
+		}
+		p {
+			color: @green;
+			font: 15px @myriad;
+		}
+	}
 }
-.pics1, .pics2, .pics3 { float: left; }
-.pics1 {
+.pics1, .pics1-2, .pics2, .pics3 { float: left; }
+.pics1, .pics1-2 {
 	height: 160px;
 	width: 160px;
 	overflow: hidden;
