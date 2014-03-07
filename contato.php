@@ -2,6 +2,7 @@
 
 	<!-- Main Body -->
 	<section id="main-content">
+		<?php include('includes/breadcrumb.php'); ?>
 		<div id="box-content" class="center">
 			<div class="tit-principal">
 				<h1>
