@@ -12,6 +12,7 @@
 
 		<!-- JS Plugins -->
         <script src="scripts/jquery.cycle.all.js"></script>
+        <script src="scripts/custom-form-elements.js"></script>
         <script src="scripts/custom.js"></script>
 	</body>
 </html>
