@@ -1,7 +1,7 @@
 // aqui vai a customização de plugins
 
-// cycle home
 $(function() {
+    // cycle home
 	$('.pics1').cycle({ 
 	    fx:     'fade', 
 	    speed:   1000, 
@@ -23,12 +23,11 @@ $(function() {
 	    timeout: 8000
 	});
     
+    // lightbox galeria
     $(".group1").colorbox({rel:'group1'});
-});
 
-(function($) {
-    $(function() {
-        $('.jcarousel').jcarousel();
+    //carousel galeria
+    $('.jcarousel').jcarousel();
 
         $('.jcarousel-control-prev')
             .on('jcarouselcontrol:active', function() {
@@ -60,5 +59,10 @@ $(function() {
                 $(this).removeClass('active');
             })
             .jcarouselPagination();
-    });
-})(jQuery);
+
+    //placeholder on IE
+    if(!$.placeholder.input || !$.placeholder.textarea) {
+        $('#hint').hide();
+    }
+
+});
