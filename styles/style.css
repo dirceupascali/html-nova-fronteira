@@ -1226,9 +1226,6 @@ button.ui-button::-moz-focus-inner {
 .gecko #header .form-search button span {
   width: 15px;
 }
-.gecko #header .nav-institucional nav {
-  background: url(../images/bg-menu-institucional.jpg) repeat-x #e5e6e8;
-}
 .ie #header .nav-institucional nav {
   background: url(../images/bg-menu-institucional.jpg) repeat-x #e5e6e8 left bottom;
 }
