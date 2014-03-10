@@ -1691,6 +1691,32 @@ body {
 	INSTITUCIONAL
 
 *****/
+/* o grupo */
+/* o que é */
+/* usina */
+/* publicacoes */
+.lista-publicacoes li {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f38121;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url(border-radius.htc);
+  *zoom: 1;
+  margin: 20px 60px;
+  padding: 10px;
+}
+.lista-publicacoes li h3 {
+  font: 14px "myriad pro", helvetica, arial;
+  color: #666;
+}
+.lista-publicacoes li .text {
+  margin-bottom: 10px;
+}
+.lista-publicacoes li .text span {
+  font: bold 16px "myriad pro", helvetica, arial;
+}
 /*****
 
 	GESTAO DE PESSOAS
@@ -1767,9 +1793,42 @@ body {
 *****/
 /*****
 
-	HOME
+	Sala de imprensa
 
 *****/
+/* Press releases */
+.press-releases li {
+  border-top: 1px solid #eee;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+}
+.press-releases li:first-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.press-releases li h2 {
+  color: #fac14e;
+  font: 20px "myriad pro", helvetica, arial;
+  margin: 0 0 10px;
+}
+.press-releases li .text {
+  margin: 0 0 10px;
+}
+.press-releases li .saiba-mais {
+  color: #f38121;
+  font: bold 12px "myriad pro", helvetica, arial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.detalhe-press h2 {
+  color: #fac14e;
+  font: 20px "myriad pro", helvetica, arial;
+  margin: 0 0 20px;
+}
+.detalhe-press .text {
+  margin: 0 0 20px;
+}
 /*****
 
 	CONTATO
@@ -1832,7 +1891,7 @@ body {
 	PUBLICAÇÕES
 
 *****/
-#publi-row ul li {
+.lista-publicacoes li {
   display: inline-block;
   text-align: center;
   border: 1px solid #f38121;
@@ -1844,14 +1903,14 @@ body {
   margin: 20px 60px;
   padding: 10px;
 }
-#publi-row ul li h3 {
+.lista-publicacoes li h3 {
   font: 14px "myriad pro", helvetica, arial;
   color: #666;
 }
-#publi-row ul li .text {
+.lista-publicacoes li .text {
   margin-bottom: 10px;
 }
-#publi-row ul li .text span {
+.lista-publicacoes li .text span {
   font: bold 16px "myriad pro", helvetica, arial;
 }
 /*****

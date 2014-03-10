@@ -10,7 +10,7 @@
 					Publicações
 				</h1>
 			</div>
-			<section id="publi-row">
+			<nav class="lista-publicacoes">
 				<ul>
 					<li><img src="images/capa-revista.jpg" width="160px" height="220px">
 						<h3>Nossas Notícias</h3><p class="text"><span> # 33</span> Jan | Junho 2014</p>
@@ -31,7 +31,7 @@
 						<h3>Nossas Notícias</h3><p class="text"><span> # 35</span> dez 2013</p>
 					</li>
 				</ul>
-			</section>		
+			</nav>		
 		</div>
 	</section>
 
