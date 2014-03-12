@@ -65,4 +65,7 @@ $(function() {
         $('#hint').hide();
     }
 
+    //css hack IE 10
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
 });

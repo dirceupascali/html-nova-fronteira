@@ -1,22 +1,74 @@
 //firefox
-&.gecko {
+&.gecko {}
+
+//internet explorer
+&.ie {
+	.breadcrumb li span { margin: 2px 0 0 10px; }
 	#header {
-		.form-search {
-			button {
-				padding: 4px;
-				span { width: 15px; }
+		.nav-institucional {
+			nav li a { 
+				display: block;
+				margin: 6px 16px;
 			}
 		}
 	}
 }
 
-
-//internet explorer
-&.ie {
+html[data-useragent*='rv:11.0'] {
 	#header {
 		.nav-institucional {
-			nav {
-				background: url(../images/bg-menu-institucional.jpg) repeat-x #e5e6e8 left bottom;
+			nav li a { 
+				display: block;
+				margin: 6px 16px;
+			}
+		}
+		.nav-principal {
+			.menu {
+				> li {
+					> a { padding: 9px 35px 5px; }
+				}
+			}
+		}
+	}
+}
+
+html[data-useragent*='MSIE 10.0'] {
+	#header {
+		.nav-principal {
+			.menu {
+				> li {
+					> a { padding: 9px 35px 5px; }
+				}
+			}
+		}
+	}
+}
+
+&.ie9 {
+	#header {
+		.nav-principal {
+			.menu {
+				> li > a { padding: 9px 35px 5px; }
+			}
+		}
+	}
+}
+
+&.ie8 {
+	#header {
+		.nav-institucional {
+			nav { background: url(../images/bg-menu-institucional.jpg) repeat-x #e5e6e8 left bottom; }
+		}
+		.nav-principal {
+			.menu {
+				> li {
+					> a { padding: 9px 35px 8px; }
+				}
+			}
+		}
+		.form-search {
+			input[type="text"] {
+				line-height: 25px;
 			}
 		}
 	}

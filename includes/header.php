@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js ie8"><![endif]-->
 <html>
     <head lang="pt-BR">
         <!-- META -->
